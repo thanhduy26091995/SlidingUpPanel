@@ -2,15 +2,15 @@
     xmlns:sothree="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:icon="@drawable/baseline_favorite_white_24"
         android:id="@+id/action_toggle"
-        android:orderInCategory="100"
-        sothree:showAsAction="never"
+        sothree:showAsAction="always"
         android:title="@string/action_hide"/>
     
     <item
+        android:icon="@drawable/baseline_favorite_white_24"
         android:id="@+id/action_anchor"
-        android:orderInCategory="200"
-        sothree:showAsAction="never"
+        sothree:showAsAction="always"
         android:title="@string/action_anchor_enable"/>    
 
 </menu>

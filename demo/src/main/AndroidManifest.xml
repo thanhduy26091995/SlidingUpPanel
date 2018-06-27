@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sothree.slidinguppanel.demo"
     xmlns:tools="http://schemas.android.com/tools"
+    package="com.sothree.slidinguppanel.demo"
     android:versionCode="17"
     android:versionName="3.4.0">
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="17"
-        tools:overrideLibrary="android.support.v7.appcompat,android.support.graphics.drawavle"
-        />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--<uses-sdk-->
+        <!--android:minSdkVersion="19"-->
+        <!--android:targetSdkVersion="28"-->
+        <!--tools:overrideLibrary="android.support.v7.appcompat,android.support.graphics.drawavle" />-->
 
     <application
         android:allowBackup="true"
@@ -25,6 +26,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC_6U59ULg_PZQ62a24z6VakVB7XQX2EDg" />
     </application>
 
 </manifest>
