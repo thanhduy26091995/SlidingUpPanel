@@ -6,9 +6,12 @@
     android:id="@+id/sliding_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:fitsSystemWindows="true"
     android:gravity="bottom"
     sothree:umanoOverlay="true"
     sothree:umanoPanelHeight="100dp"
+    sothree:umanoScrollableView="@id/list"
     sothree:umanoShadowHeight="0dp">
 
 
@@ -20,7 +23,13 @@
 
         <fragment
             android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:name="com.sothree.slidinguppanel.demo.CustomMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/marker_view_incl"
+            layout="@layout/marker_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -175,7 +184,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_above="@+id/bottom_navigation"
-                android:background="#000" />
+                android:background="#FF00" />
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation"
